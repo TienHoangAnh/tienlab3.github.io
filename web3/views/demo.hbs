@@ -1,0 +1,32 @@
+My name is: {{ name }}
+<br>
+Year: {{year}}
+<br>
+Country: {{ country }}
+<br>
+Music genre:
+<ul style="list-style-type: circle;">
+    {{#each music}}
+    <li>{{this}},</li>
+    {{/each}}
+</ul>
+Music genre:
+<ol type="A">
+    {{#each music}}
+    <li>{{this}},</li>
+    {{/each}}
+</ol>
+
+Create table:
+<table>
+    <tr>
+        <th>Music</th>
+        <th>Name Music</th>
+    </tr>
+    {{#each music }}
+    <tr>
+        <th>{{ this }}</th>
+    </tr>
+    {{/each}}
+    
+</table>
